@@ -9,6 +9,11 @@ function pegarValor() {
     let mes = partes[1]
     let ano = partes[2]
 
+    if (dia > 31) {
+        alert(`Dia inválido`)
+        return
+    } 
+
     const paragrafo = document.getElementById('exibeValor');
     paragrafo.textContent = `${dia} de ${meses[mes - 1]} de ${ano}`;
 }
