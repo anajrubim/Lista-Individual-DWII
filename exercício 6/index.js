@@ -9,7 +9,7 @@ function pegarValor() {
     let mes = partes[1]
     let ano = partes[2]
 
-    if (dia > 31) {
+    if (dia > 31 || dia < 1) {
         alert(`Dia inválido`)
         return
     } 
