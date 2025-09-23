@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de pagamento do hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container d-flex flex-column w-25 mt-4">
+        <input type="text" class="form-control" id="cod" placeholder="Insira o código do funcionário"><br>
+        <input type="text" class="form-control" id="totalHorasTrabalhadas" placeholder="Insira o número mensal de horas trabalhadas"><br>
+        <input type="text" class="form-control" id="turno" placeholder="Insira o seu turno (M - V - N)"><br>
+        <input type="text" class="form-control" id="categoria" placeholder="Insira a sua categoria (F - G)"><br>
+        <input type="text" class="form-control" id="salarioMinimo" placeholder="Insira o salário minimo">
+        <button class="btn btn-primary my-4" onclick="pegarValor()">Pegar Valor</button>
+        <p id="exibeValor"></p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>
